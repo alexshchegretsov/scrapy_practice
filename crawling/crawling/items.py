@@ -8,7 +8,11 @@
 import scrapy
 
 
-class CrawlingItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class BookCover(scrapy.Item):
+    title = scrapy.Field()
+    price = scrapy.Field()
+    # in_stock = scrapy.Field()
+    star = scrapy.Field()
+    file_urls = scrapy.Field()
+    files = scrapy.Field()
+
